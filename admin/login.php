@@ -18,9 +18,7 @@ require('../mail/conexion.php');
 	
 	<!-- Bootstrap Stylesheets -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<!-- Font Awesome Stylesheets -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<!-- Template Main Stylesheets -->
 	<link rel="stylesheet" href="css/contact-form.css" type="text/css">
 </head>
 
@@ -41,12 +39,10 @@ require('../mail/conexion.php');
 								</div><!--End col -->
 								<div class="col-md-12">
 								<form name="contactform" action="registrarContrato.php" method="POST" data-toggle="validator" class="popup-form">
-			                        <div class="row">
-			                          <div id="msgContactSubmit" class="hidden"></div>
-			                          <div class="form-group col-sm-12">
+								<div class="form-group col-sm-12">
 			                            <div class="help-block with-errors"></div>
-			                            <input name="email" id="email" placeholder="Correo electronico*" pattern=".*@\w{2,}\.\w{2,}" class="form-control" type="email" required data-error="Por favor ingresa un correo electrónico válido">
-			                            <div class="input-group-icon"><i class="fa fa-envelope"></i></div>
+			                            <input name="fname" id="fname" placeholder="Usuario*"class="form-control" type="text" required data-error="Por favor ingresa el Usuario">
+			                            <div class="input-group-icon"><i class="fa fa-user"></i></div>
 			                          </div>
 									   <div class="form-group col-sm-12">
 			                            <div class="help-block with-errors"></div>
@@ -91,3 +87,4 @@ require('../mail/conexion.php');
 	
 </body>
 </html>
+<?php

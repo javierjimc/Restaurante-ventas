@@ -236,8 +236,8 @@ require('mail/conexion.php');
     <div class="col-md-4">
       <h3>Nuestra dirección</h3>
       <div class="contact-item">
-        <p>Manuel Rodriguez  #659</p>
-        <p> San Fernando</p>
+        <p>Carampangue 1058, 3071619</p>
+        <p>San Fernando, O'Higgins</p>
       </div>
     </div>
     <div class="col-md-4">
