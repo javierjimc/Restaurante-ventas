@@ -180,6 +180,20 @@ CREATE TABLE `ventas` (
   `fecha` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
+CREATE TABLE `empleados` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` text COLLATE utf8_spanish_ci NOT NULL,
+  `documento` int(11) NOT NULL,
+  `email` text COLLATE utf8_spanish_ci NOT NULL,
+  `telefono` text COLLATE utf8_spanish_ci NOT NULL,
+  `direccion` text COLLATE utf8_spanish_ci NOT NULL,
+  `puesto` text COLLATE utf8_spanish_ci NOT NULL,
+  `salario` float NOT NULL,
+  `fecha_contratacion` date NOT NULL,
+  `fecha` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
 --
 -- Índices para tablas volcadas
 --

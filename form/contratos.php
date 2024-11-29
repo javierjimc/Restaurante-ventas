@@ -88,8 +88,6 @@ require('../mail/conexion.php');
 			                            <div class="help-block with-errors"></div>
 			                              <select name="banquete" id="banquete" class="form-control" required="Por favor seleccione un banquete">
 			                                <option value="">Tipo de banquete</option>
-											<option>Almuerzo</option>
-											<option>Cena</option>
 			                                <?php
 			                                  $extraer_categorias = "SELECT categoria FROM categorias";
 			                                  $extraer_datos = mysqli_query($conn,$extraer_categorias);

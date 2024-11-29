@@ -1,5 +1,5 @@
 <?php 
-require('../mail/conexion.php');
+include('../mail/conexion.php');
 ?>
 <!DOCTYPE html>
 <html lang="en-US">
@@ -38,16 +38,16 @@ require('../mail/conexion.php');
 								   </div><!--End item-content -->
 								</div><!--End col -->
 								<div class="col-md-12">
-								<form name="contactform" action="registrarContrato.php" method="POST" data-toggle="validator" class="popup-form">
+								<form name="contactform" action="backendLogin.php" method="POST" data-toggle="validator" class="popup-form">
 								<div class="form-group col-sm-12">
 			                            <div class="help-block with-errors"></div>
-			                            <input name="fname" id="fname" placeholder="Usuario*"class="form-control" type="text" required data-error="Por favor ingresa el Usuario">
+			                            <input name="users" id="users" placeholder="Usuario*"class="form-control" type="text" required data-error="Por favor ingresa el Usuario">
 			                            <div class="input-group-icon"><i class="fa fa-user"></i></div>
 			                          </div>
 									   <div class="form-group col-sm-12">
 			                            <div class="help-block with-errors"></div>
-			                            <input name="fname" id="fname" placeholder="Contraseña*"class="form-control" type="password" required data-error="Por favor ingresa tu contraseña">
-			                            <div class="input-group-icon"><i class="fa fa-user"></i></div>
+			                            <input name="password" id="password" placeholder="Contraseña*"class="form-control" type="password" required data-error="Por favor ingresa tu contraseña">
+			                            <div class="input-group-icon"><i class="fa fa-solid fa-lock"></i></div>
 			                          </div>
 			                          <div class="form-group col-sm-12">
 			                            <div class="help-block with-errors"></div>
